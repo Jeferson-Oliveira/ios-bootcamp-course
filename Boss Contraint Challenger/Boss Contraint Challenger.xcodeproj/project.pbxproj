@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32966789D1035A1A8DEFE548 /* Pods_Boss_Contraint_Challenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4F144FBA11C025F09543C0 /* Pods_Boss_Contraint_Challenger.framework */; };
 		41392D3024B16FFB00A807D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41392D2F24B16FFB00A807D4 /* AppDelegate.swift */; };
 		41392D3224B16FFB00A807D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41392D3124B16FFB00A807D4 /* SceneDelegate.swift */; };
 		41392D3424B16FFB00A807D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41392D3324B16FFB00A807D4 /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		41392D3824B1700000A807D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41392D3B24B1700000A807D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41392D3D24B1700000A807D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50096DE13B24F8D055BCFFE6 /* Pods-Boss Contraint Challenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boss Contraint Challenger.debug.xcconfig"; path = "Target Support Files/Pods-Boss Contraint Challenger/Pods-Boss Contraint Challenger.debug.xcconfig"; sourceTree = "<group>"; };
+		7A4F144FBA11C025F09543C0 /* Pods_Boss_Contraint_Challenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boss_Contraint_Challenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5A5010EF78717482058EB4 /* Pods-Boss Contraint Challenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boss Contraint Challenger.release.xcconfig"; path = "Target Support Files/Pods-Boss Contraint Challenger/Pods-Boss Contraint Challenger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32966789D1035A1A8DEFE548 /* Pods_Boss_Contraint_Challenger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				41392D2E24B16FFB00A807D4 /* Boss Contraint Challenger */,
 				41392D2D24B16FFB00A807D4 /* Products */,
+				6091B9BE8EF19BEEDEAE8F69 /* Pods */,
+				B7E673C7840A332180C6D7A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "Boss Contraint Challenger";
 			sourceTree = "<group>";
 		};
+		6091B9BE8EF19BEEDEAE8F69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50096DE13B24F8D055BCFFE6 /* Pods-Boss Contraint Challenger.debug.xcconfig */,
+				FF5A5010EF78717482058EB4 /* Pods-Boss Contraint Challenger.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B7E673C7840A332180C6D7A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A4F144FBA11C025F09543C0 /* Pods_Boss_Contraint_Challenger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41392D4024B1700000A807D4 /* Build configuration list for PBXNativeTarget "Boss Contraint Challenger" */;
 			buildPhases = (
+				47DFC6DAEE884592D2FCCFB4 /* [CP] Check Pods Manifest.lock */,
 				41392D2824B16FFB00A807D4 /* Sources */,
 				41392D2924B16FFB00A807D4 /* Frameworks */,
 				41392D2A24B16FFB00A807D4 /* Resources */,
+				4DD3A7D302CFB3AE6D140303 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47DFC6DAEE884592D2FCCFB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Boss Contraint Challenger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DD3A7D302CFB3AE6D140303 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Boss Contraint Challenger/Pods-Boss Contraint Challenger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Boss Contraint Challenger/Pods-Boss Contraint Challenger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Boss Contraint Challenger/Pods-Boss Contraint Challenger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41392D2824B16FFB00A807D4 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		41392D4124B1700000A807D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50096DE13B24F8D055BCFFE6 /* Pods-Boss Contraint Challenger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		41392D4224B1700000A807D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF5A5010EF78717482058EB4 /* Pods-Boss Contraint Challenger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
